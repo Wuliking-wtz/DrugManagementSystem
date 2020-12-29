@@ -1,0 +1,252 @@
+/* logo */
+.logo {
+  width: 15%;
+  height: auto;
+  display: inline-block;
+}
+.logo img{
+  max-width: 100%;
+  height: auto;
+}
+.topbar{
+  border-bottom: 1px solid #ddd;
+  /* background: #4834d4; */
+  background: -webkit-linear-gradient(top,skyblue,lightblue,white);
+  height: 9%;
+}
+.topbar .user-tips {
+  color: #000;
+  float: right;
+  font-size: 18px;
+  margin: 20px 20px 5px 0;
+}
+.topbar .user-tips a {
+  /*display: block;*/
+  /*float: right;*/
+  /*width: 180px;*/
+  /*margin-right: 0px;*/
+}
+
+/* 网址标签栏 */
+.page-content-wrapper {
+  padding: 0px 10px;
+  position: absolute;
+  top: 8%;
+  /* transition: all .3s linear 0s; */
+  /* transition: all 0.9s cubic-bezier(1, -0.375, 0.285, 0.995); */
+  /* animation: pageTanslate .5s linear forwards; */
+  width: 82%;
+  height: 85%;
+  padding: 0px 10px;
+  margin-left: 17%;
+}
+
+.page-content-wrapper.active{
+  transform: translateX(-16%);
+  /* animation: pageTanslate .5s linear forwards; */
+  width: 97%;
+}
+.page-content-wrapper .ul-tab{
+  left: 0px;
+  top: 0px;
+  height: 25px;
+}
+
+.menu-button.active{
+  /* left: 10px; */
+  /* transition: all 0.9s cubic-bezier(1, -0.375, 0.285, 0.995); */
+}
+.menu-button:hover {
+  opacity: .6;
+}
+.menu-button .glyphicon-menu-hamburger::before {
+  padding-right: 5px;
+}
+/* .menu-button button {
+  display: inline-block;
+} */
+.page-content-wrapper .ul-tab{
+  display: block;
+  position: relative;
+  text-decoration:none;
+  background-color: #dfe4ea;
+  top: 10px;
+  left: 0px;
+  height: auto;
+  z-index: 200;
+  /* z-index: 100; */
+  /* margin: 1em 0; */
+  /* margin-left: 80px; */
+  /* height: 30px; */
+  /* left: 50px; */
+  /* color: #818896; */
+  /* color: #4a4a4a; */
+  /* padding: 10px 30px 8px 30px; */
+}
+.page-content-wrapper .ul-tab ul{
+  display: inline-block;
+  width: 92%;
+  height: auto;
+  overflow: scroll;
+  overflow-y:hidden;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+  margin-block-end: 0;
+  white-space:nowrap;
+  /* margin: 1em 0; */
+}
+.page-content-wrapper .ul-tab .menu-button,
+.page-content-wrapper .ul-tab ul {
+  margin: 0;
+  vertical-align: bottom;
+}
+.page-content-wrapper .ul-tab ul {
+  font-size: 0;
+}
+.page-content-wrapper .menu-button{
+  position: relative;
+  display: inline-block;
+  z-index: 1002;
+  width: auto;
+  margin: 1em 0;
+  border: 1px solid rgba(255,255,255,.6);
+  border-radius: 3px;
+  font-size: 12px;
+  overflow:hidden;
+  text-transform: uppercase;
+  line-height: 25px;
+  /* text-align: center;  */
+  /* transition: all 0.9s cubic-bezier(1, -0.375, 0.285, 0.995); */
+}
+.page-content-wrapper .menu-button button{
+  padding: 4px 2px 4px 2px;
+}
+.page-content-wrapper .ul-tab ul li{
+  display: inline-block;
+  position: relative;
+  /* height: 100%; */
+  /*line-height: 18px;*/
+  width: auto;
+  border:2px solid rgb(118, 118, 118);
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+  margin-left:2px;
+  
+}
+.page-content-wrapper .ul-tab ul li.active{
+
+  border-bottom: 3px solid #0dd1b2!important;
+}
+.page-content-wrapper .ul-tab ul li .text{
+  display: inline-block;
+  text-decoration:none;
+  position: relative;
+  text-align: center; 
+  white-space: nowrap;
+  user-select: none;
+  color: #000;
+  padding: 5px 10px 0px 12px;
+}
+.page-content-wrapper .ul-tab ul li .text span{
+  font-size: 14px;
+  
+  text-decoration:none;
+  text-align: center; 
+  white-space: nowrap;
+  top: 1px;
+  color: #000;
+  font-weight: 500;
+  /* padding: 10px 5px 5px 5px; */
+}
+.page-content-wrapper .ul-tab ul li:not(.active):hover{
+  background-color: #ced6e0;
+}
+.page-content-wrapper .ul-tab ul li.active:hover .text{
+  cursor: default;
+}
+.page-content-wrapper .ul-tab ul li.active .text span{
+  color: #0dd1b2;
+  user-select: none;
+}
+.page-content-wrapper .ul-tab ul li .close-button{
+  color: #2f3542;
+  opacity:0;
+  display: inline-block;
+  font-size: 10px;
+  line-height: 18px;
+  margin-right: 3px;
+}
+.page-content-wrapper .ul-tab ul li:hover .close-button,
+.page-content-wrapper .ul-tab ul li.active .close-button{
+  opacity:1;
+}
+.page-content-wrapper .ul-tab ul li .close-button:hover{
+  color: red;
+  cursor: pointer;
+  opacity:1;
+}
+.page-content-wrapper .page-content {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.page-content-wrapper .page-content div{
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.page-content-wrapper .page-content iframe{
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid #0dd1b2!important;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+/*------scroll bar---------------------*/
+/* 滚动条整体部分 */
+.page-content-wrapper .ul-tab ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+/* 滚动条两端的按钮 */
+.page-content-wrapper .ul-tab ::-webkit-scrollbar-button {
+  width:0px;
+  height: 0px;
+}
+/* 滑动的滑块 */
+.page-content-wrapper .ul-tab ::-webkit-scrollbar-thumb {
+  background: #a4b0be;
+  /* background:rgb(188, 186, 192); */
+  /* background:rgb(0, 209, 178); */
+  border: 0px none rgb(188, 186, 192);
+  border-radius: 0px;
+}
+.page-content-wrapper .ul-tab ::-webkit-scrollbar-thumb:hover {
+  background: #525965;
+}
+.page-content-wrapper .ul-tab ::-webkit-scrollbar-thumb:active {
+  background: #525965;
+}
+/* 外层轨道 */
+.page-content-wrapper .ul-tab ::-webkit-scrollbar-track {
+  background: #ffffff;
+  /* border: 0px none #525965; */
+  border-radius: 50px;
+}
+.page-content-wrapper .ul-tab ::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+.page-content-wrapper .ul-tab ::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+/* 边角 */
+.page-content-wrapper .ul-tab ::-webkit-scrollbar-corner {
+  background: transparent;
+  
+}

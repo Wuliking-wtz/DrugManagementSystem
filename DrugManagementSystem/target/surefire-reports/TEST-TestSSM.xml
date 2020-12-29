@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="TestSSM" time="4.636" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="G:\java_SE_jdk1.8.0.131\jre\bin"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\代码练习及测试\DrugManagementSystem"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\代码练习及测试\DrugManagementSystem"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="G:\java_SE_jdk1.8.0.131\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\TINGZE~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="G:\idea-2019.3.2\idea-2019.3.2\IntelliJ IDEA 2019.3.2\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="G:\maven-3.6.3-bin\apache-maven-3.6.3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="G:\java_SE_jdk1.8.0.131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;G:\VSCode\VSCode\Microsoft VS Code\bin;G:\SQL Server 2008\Microssoft SQL Server(x86)\100\Tools\Binn\;G:\SQL Server 2008\Microssoft SQL Server\100\Tools\Binn\;G:\SQL Server 2008\Microssoft SQL Server\100\DTS\Binn\;G:\SQL Server 2008\Microssoft SQL Server(x86)\100\Tools\Binn\VSShell\Common7\IDE\;G:\SQL Server 2008\Microssoft SQL Server(x86)\100\DTS\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;G:\CodeBlocks\MinGW\mingw32\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;G:\git\git软件\Git\cmd;G:\mysql8.0\mysql8.0\mysql\bin;C:\Users\Tingze Wu\AppData\Local\Microsoft\WindowsApps;G:\java_SE_jdk1.8.0.131\bin;C:\Users\Tingze Wu\AppData\Local\Programs\Microsoft VS Code\bin;G:\idea-2019.3.2\idea-2019.3.2\IntelliJ IDEA 2019.3.2\bin;;G:\maven-3.6.3-bin\apache-maven-3.6.3\bin;;."/>
+    <property name="maven.conf" value="G:\maven-3.6.3-bin\apache-maven-3.6.3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="idea.version2019.3.2" value="true"/>
+    <property name="user.home" value="C:\Users\Tingze Wu"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Tingze Wu"/>
+    <property name="java.class.path" value="G:\maven-3.6.3-bin\apache-maven-3.6.3\boot\plexus-classworlds-2.6.0.jar;G:\maven-3.6.3-bin\apache-maven-3.6.3\boot\plexus-classworlds.license;G:\idea-2019.3.2\idea-2019.3.2\IntelliJ IDEA 2019.3.2\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="G:\java_SE_jdk1.8.0.131\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.3.2 -s G:\maven-3.6.3-bin\apache-maven-3.6.3\conf\settings.xml package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="java.ext.dirs" value="G:\java_SE_jdk1.8.0.131\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="G:\java_SE_jdk1.8.0.131\jre\lib\resources.jar;G:\java_SE_jdk1.8.0.131\jre\lib\rt.jar;G:\java_SE_jdk1.8.0.131\jre\lib\sunrsasign.jar;G:\java_SE_jdk1.8.0.131\jre\lib\jsse.jar;G:\java_SE_jdk1.8.0.131\jre\lib\jce.jar;G:\java_SE_jdk1.8.0.131\jre\lib\charsets.jar;G:\java_SE_jdk1.8.0.131\jre\lib\jfr.jar;G:\java_SE_jdk1.8.0.131\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="G:\maven-3.6.3-bin\apache-maven-3.6.3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="archetypeCatal" value="internal"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="TestSSM" name="testJdbc" time="4.636">
+    <error message="Error creating bean with name &apos;org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0&apos;: Invocation of init method failed; nested exception is java.lang.IllegalStateException: WebApplicationObjectSupport instance [ResourceHttpRequestHandler [&quot;/WEB-INF/resources/&quot;]] does not run in a WebApplicationContext but in: org.springframework.context.support.ClassPathXmlApplicationContext@63d4e2ba, started on Wed Dec 09 13:18:28 CST 2020" type="org.springframework.beans.factory.BeanCreationException">org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0&apos;: Invocation of init method failed; nested exception is java.lang.IllegalStateException: WebApplicationObjectSupport instance [ResourceHttpRequestHandler [&quot;/WEB-INF/resources/&quot;]] does not run in a WebApplicationContext but in: org.springframework.context.support.ClassPathXmlApplicationContext@63d4e2ba, started on Wed Dec 09 13:18:28 CST 2020
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:85)
+	at TestSSM.testJdbc(TestSSM.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.IllegalStateException: WebApplicationObjectSupport instance [ResourceHttpRequestHandler [&quot;/WEB-INF/resources/&quot;]] does not run in a WebApplicationContext but in: org.springframework.context.support.ClassPathXmlApplicationContext@63d4e2ba, started on Wed Dec 09 13:18:28 CST 2020
+	at org.springframework.web.context.support.WebApplicationObjectSupport.getWebApplicationContext(WebApplicationObjectSupport.java:114)
+	at org.springframework.web.context.support.WebApplicationObjectSupport.getServletContext(WebApplicationObjectSupport.java:133)
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.initContentNegotiationStrategy(ResourceHttpRequestHandler.java:428)
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.afterPropertiesSet(ResourceHttpRequestHandler.java:346)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 41 more
+</error>
+    <system-out>Logging initialized using &apos;class org.apache.ibatis.logging.stdout.StdOutImpl&apos; adapter.
+Class not found: org.jboss.vfs.VFS
+JBoss 6 VFS API is not available in this environment.
+Class not found: org.jboss.vfs.VirtualFile
+VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+Using VFS adapter org.apache.ibatis.io.DefaultVFS
+Find JAR URL: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/pojo
+Not a JAR: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/pojo
+Reader entry: Agency.class
+Reader entry: Client.class
+Reader entry: Medicine.class
+Reader entry: Page.class
+Reader entry: Sold.class
+Reader entry: User.class
+Listing file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/pojo
+Find JAR URL: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/pojo/Agency.class
+Not a JAR: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/pojo/Agency.class
+Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;t	&amp;#0;&amp;#6;&amp;#0;W	&amp;#0;&amp;#6;&amp;#0;X	&amp;#0;&amp;#6;&amp;#0;Y	&amp;#0;&amp;#6;&amp;#0;Z	&amp;#0;&amp;#6;&amp;#0;[&amp;#7;&amp;#0;\
+Find JAR URL: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/pojo/Client.class
+Not a JAR: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/pojo/Client.class
+Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;?	&amp;#0;&amp;#8;&amp;#0;f	&amp;#0;&amp;#8;&amp;#0;g	&amp;#0;&amp;#8;&amp;#0;h	&amp;#0;&amp;#8;&amp;#0;i	&amp;#0;&amp;#8;&amp;#0;j	&amp;#0;&amp;#8;&amp;#0;k	&amp;#0;&amp;#8;&amp;#0;l&amp;#7;&amp;#0;m
+Find JAR URL: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/pojo/Medicine.class
+Not a JAR: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/pojo/Medicine.class
+Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;h	&amp;#0;&amp;#5;&amp;#0;N	&amp;#0;&amp;#5;&amp;#0;O	&amp;#0;&amp;#5;&amp;#0;P	&amp;#0;&amp;#5;&amp;#0;Q&amp;#7;&amp;#0;R
+Find JAR URL: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/pojo/Page.class
+Not a JAR: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/pojo/Page.class
+Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;F	&amp;#0;&amp;#3;&amp;#0;4	&amp;#0;&amp;#3;&amp;#0;5&amp;#7;&amp;#0;6
+Find JAR URL: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/pojo/Sold.class
+Not a JAR: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/pojo/Sold.class
+Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;?	&amp;#0;&amp;#7;&amp;#0;d	&amp;#0;&amp;#7;&amp;#0;e	&amp;#0;&amp;#7;&amp;#0;f	&amp;#0;&amp;#7;&amp;#0;g	&amp;#0;&amp;#7;&amp;#0;h	&amp;#0;&amp;#7;&amp;#0;i&amp;#7;&amp;#0;j
+Find JAR URL: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/pojo/User.class
+Not a JAR: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/pojo/User.class
+Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;^
+Checking to see if class com.tom.pojo.Agency matches criteria [is assignable to Object]
+Checking to see if class com.tom.pojo.Client matches criteria [is assignable to Object]
+Checking to see if class com.tom.pojo.Medicine matches criteria [is assignable to Object]
+Checking to see if class com.tom.pojo.Page matches criteria [is assignable to Object]
+Checking to see if class com.tom.pojo.Sold matches criteria [is assignable to Object]
+Checking to see if class com.tom.pojo.User matches criteria [is assignable to Object]
+Find JAR URL: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao
+Not a JAR: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao
+Reader entry: AgencyDao.class
+Reader entry: AgencyDao.xml
+Reader entry: ClientDao.class
+Reader entry: ClientDao.xml
+Reader entry: ExcelUtil.class
+Reader entry: MedicineDao.class
+Reader entry: MedicineDao.xml
+Reader entry: SoldDao.class
+Reader entry: SoldDao.xml
+Reader entry: UserLoginDao.class
+Reader entry: UserLoginDao.xml
+Listing file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao
+Find JAR URL: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao/AgencyDao.class
+Not a JAR: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao/AgencyDao.class
+Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#26;&amp;#7;&amp;#0;&amp;#24;&amp;#7;&amp;#0;&amp;#25;&amp;#1;&amp;#0;&amp;#11;selectByAno&amp;#1;&amp;#0;*(Ljava/lang/Integer;)Lcom/tom/pojo/Agency;&amp;#1;&amp;#0;&quot;RuntimeVisibleParameterAnnotations&amp;#1;&amp;#0;%Lorg/apache/ibatis/annotations/Param;&amp;#1;&amp;#0;&amp;#5;value&amp;#1;&amp;#0;&amp;#3;ano&amp;#1;&amp;#0;	selectAll&amp;#1;&amp;#0;&amp;#18;()Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;)()Ljava/util/List&lt;Lcom/tom/pojo/Agency;&gt;;&amp;#1;&amp;#0;
+Find JAR URL: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao/AgencyDao.xml
+Not a JAR: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao/AgencyDao.xml
+Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+Find JAR URL: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao/ClientDao.class
+Not a JAR: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao/ClientDao.class
+Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#27;&amp;#7;&amp;#0;&amp;#25;&amp;#7;&amp;#0;&amp;#26;&amp;#1;&amp;#0;&amp;#11;selectByCno&amp;#1;&amp;#0;*(Ljava/lang/Integer;)Lcom/tom/pojo/Client;&amp;#1;&amp;#0;&quot;RuntimeVisibleParameterAnnotations&amp;#1;&amp;#0;%Lorg/apache/ibatis/annotations/Param;&amp;#1;&amp;#0;&amp;#5;value&amp;#1;&amp;#0;&amp;#3;cno&amp;#1;&amp;#0;	selectAll&amp;#1;&amp;#0;&amp;#18;()Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;)()Ljava/util/List&lt;Lcom/tom/pojo/Client;&gt;;&amp;#1;&amp;#0;
+Find JAR URL: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao/ClientDao.xml
+Not a JAR: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao/ClientDao.xml
+Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+Find JAR URL: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao/ExcelUtil.class
+Not a JAR: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao/ExcelUtil.class
+Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;?
+Find JAR URL: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao/MedicineDao.class
+Not a JAR: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao/MedicineDao.class
+Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#28;&amp;#7;&amp;#0;&amp;#26;&amp;#7;&amp;#0;&amp;#27;&amp;#1;&amp;#0;&amp;#11;selectByMno&amp;#1;&amp;#0;,(Ljava/lang/Integer;)Lcom/tom/pojo/Medicine;&amp;#1;&amp;#0;&quot;RuntimeVisibleParameterAnnotations&amp;#1;&amp;#0;%Lorg/apache/ibatis/annotations/Param;&amp;#1;&amp;#0;&amp;#5;value&amp;#1;&amp;#0;&amp;#3;mno&amp;#1;&amp;#0;	selectAll&amp;#1;&amp;#0;&amp;#18;()Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;+()Ljava/util/List&lt;Lcom/tom/pojo/Medicine;&gt;;&amp;#1;&amp;#0;
+Find JAR URL: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao/MedicineDao.xml
+Not a JAR: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao/MedicineDao.xml
+Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+Find JAR URL: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao/SoldDao.class
+Not a JAR: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao/SoldDao.class
+Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0; &amp;#7;&amp;#0;&amp;#30;&amp;#7;&amp;#0;&amp;#31;&amp;#1;&amp;#0;
+Find JAR URL: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao/SoldDao.xml
+Not a JAR: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao/SoldDao.xml
+Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+Find JAR URL: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao/UserLoginDao.class
+Not a JAR: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao/UserLoginDao.class
+Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#20;&amp;#7;&amp;#0;&amp;#18;&amp;#7;&amp;#0;&amp;#19;&amp;#1;&amp;#0;&amp;#19;selectUserByAccount&amp;#1;&amp;#0;&apos;(Ljava/lang/String;)Lcom/tom/pojo/User;&amp;#1;&amp;#0;&quot;RuntimeVisibleParameterAnnotations&amp;#1;&amp;#0;%Lorg/apache/ibatis/annotations/Param;&amp;#1;&amp;#0;&amp;#5;value&amp;#1;&amp;#0;&amp;#7;account&amp;#1;&amp;#0;
+Find JAR URL: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao/UserLoginDao.xml
+Not a JAR: file:/D:/%e4%bb%a3%e7%a0%81%e7%bb%83%e4%b9%a0%e5%8f%8a%e6%b5%8b%e8%af%95/DrugManagementSystem/target/classes/com/tom/dao/UserLoginDao.xml
+Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+Checking to see if class com.tom.dao.AgencyDao matches criteria [is assignable to Object]
+Checking to see if class com.tom.dao.ClientDao matches criteria [is assignable to Object]
+Checking to see if class com.tom.dao.ExcelUtil matches criteria [is assignable to Object]
+Checking to see if class com.tom.dao.MedicineDao matches criteria [is assignable to Object]
+Checking to see if class com.tom.dao.SoldDao matches criteria [is assignable to Object]
+Checking to see if class com.tom.dao.UserLoginDao matches criteria [is assignable to Object]
+</system-out>
+    <system-err>ʮ���� 09, 2020 1:18:33 ���� org.springframework.context.support.AbstractApplicationContext refresh
+����: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0&apos;: Invocation of init method failed; nested exception is java.lang.IllegalStateException: WebApplicationObjectSupport instance [ResourceHttpRequestHandler [&quot;/WEB-INF/resources/&quot;]] does not run in a WebApplicationContext but in: org.springframework.context.support.ClassPathXmlApplicationContext@63d4e2ba, started on Wed Dec 09 13:18:28 CST 2020
+ʮ���� 09, 2020 1:18:33 ���� com.alibaba.druid.support.logging.JakartaCommonsLoggingImpl info
+��Ϣ: {dataSource-0} closing ...
+</system-err>
+  </testcase>
+</testsuite>

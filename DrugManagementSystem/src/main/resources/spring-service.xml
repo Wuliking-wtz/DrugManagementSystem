@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!--扫描service下的包-->
+    <context:component-scan base-package="com.tom.service"/>
+
+    <!--将我们所有的业务类，注入到spring，可以通过配置，或者注解实现-->
+    <bean id="userLoginServiceImpl" class="com.tom.service.UserLoginServiceImpl">
+        <property name="userLoginDao" ref="userLoginDao"/>
+    </bean>
+    <bean id="clientServiceImpl" class="com.tom.service.ClientServiceImpl">
+        <property name="clientDao" ref="clientDao"/>
+    </bean>
+    <bean id="agencyServiceImpl" class="com.tom.service.AgencyServiceImpl">
+        <property name="agencyDao" ref="agencyDao"/>
+    </bean>
+    <bean id="medicineServiceImpl" class="com.tom.service.MedicineServiceImpl">
+        <property name="medicineDao" ref="medicineDao"/>
+    </bean>
+    <bean id="soldServiceImpl" class="com.tom.service.SoldServiceImpl">
+        <property name="soldDao" ref="soldDao"/>
+    </bean>
+
+
+
+    <!--声明式事务配置-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <!--注入数据源-->
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!--aop事务支持！-->
+    <!--配置事务通知-->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <!--给哪些方法配置事务-->
+        <tx:attributes>
+            <tx:method name="*" propagation="REQUIRED"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <!--配置事务切入-->
+    <aop:config>
+        <aop:pointcut id="txPointCut" expression="execution(* com.tom.dao.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointCut"/>
+    </aop:config>
+</beans>

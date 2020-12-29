@@ -1,0 +1,168 @@
+@keyframes swing{
+  0%{
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(135deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes navTanslate{
+  0%{
+    transform: translateX(-10%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+ul,li {
+  list-style-type:none;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  font-family: "Helvetica Neue",Helvetica，Arial,
+  "PingFang sc", "Hiragino Sans GB","HeitiSC",
+  "Microsoft YaHei" ,"wenQuanYi Micro Hei", sans-serif;
+  background-color: #eaeaea;
+}
+/* 导航栏 */
+.sidebar-wrapper {
+  /* background-color: #212529; */
+  background-color: #fff;
+
+  /* background-color:#2ed573; */
+  /* background-color: #7bed9f; */
+  position: fixed;
+  width: 16%;
+  height: 100%;
+  top: 9%;
+  max-height: 100%;
+  flex-direction:column; 
+  overflow:auto;
+  border-top: 3px solid #ddd;
+  border-right: 1px solid #ddd;
+  z-index: 999;
+  transition: all .3s linear 0s;
+  /* transition: all 0.5s ease-in-out; */
+  /* transition: all 0.9s cubic-bezier(1, -0.375, 0.285, 0.995); */
+}
+.sidebar-wrapper.active {
+  transform: translateX(-100%);
+  /* animation: navTanslate .5s linear forwards; */
+}
+.sidebar-wrapper .sidebar-menu>ul {
+  padding-inline-start: 0px;
+  padding-bottom: 35%;
+  /* overflow: scroll; */
+  /* color: #818896; */
+}
+.sidebar-wrapper .sidebar-menu .header-menu {
+  font-weight: bold;
+  user-select: none;
+  font-size: 20px;
+  padding: 15px 20px 5px 10px;
+  display: inline-block;
+}
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown a,
+.sidebar-wrapper .sidebar-menu .sidebar-extra a {
+  display: inline-block;
+  width: 100%;
+  text-decoration:none;
+  position: relative;
+  /* color: #818896; */
+  color: #4a4a4a;
+  
+  /* color: #00d1b2; */
+  padding: 10px 30px 8px 30px;
+}
+.sidebar-wrapper .sidebar-menu a:hover{
+  /* color: #b8bfce; */
+  color: #00d1b2;
+  background: #ebfffc;
+}
+.sidebar-wrapper .sidebar-menu .sidebar-submenu>ul{
+  padding-inline-start: 0px;
+}
+
+.sidebar-wrapper .sidebar-menu .sidebar-submenu a{
+  
+  user-select: none;
+  padding: 10px 30px 8px 70px;
+}
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown a span,
+.sidebar-wrapper .sidebar-menu .sidebar-extra a span{
+  user-select: none;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: left;
+  line-height: 18px;
+  
+}
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown span.glyphicon-chevron-down{
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  transform: rotate(0deg);
+}
+.sidebar-wrapper .sidebar-menu .active span.glyphicon-chevron-down{
+  transform: rotate(180deg);
+  animation: swing .2s linear forwards;
+}
+
+/*------scroll bar---------------------*/
+/* 滚动条整体部分 */
+.page-wrapper::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+/* 滚动条两端的按钮 */
+.page-wrapper::-webkit-scrollbar-button {
+  /* width: 6px;
+  height: 6px;
+  
+  background: #525965; */
+}
+/* 滑动的滑块 */
+.page-wrapper::-webkit-scrollbar-thumb {
+  background: #eaeaea;
+  /* background:rgb(188, 186, 192); */
+  /* background:rgb(0, 209, 178); */
+  border: 0px none rgb(188, 186, 192);
+  border-radius: 0px;
+}
+.page-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #525965;
+}
+.page-wrapper::-webkit-scrollbar-thumb:active {
+  background: #525965;
+}
+/* 外层轨道 */
+.page-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+.page-wrapper::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+.page-wrapper::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+/* 边角 */
+.page-wrapper::-webkit-scrollbar-corner {
+  background: transparent;
+}

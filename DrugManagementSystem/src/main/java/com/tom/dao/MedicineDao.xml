@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tom.dao.MedicineDao">
+
+    <select id="selectByMno" resultType="Medicine">
+        select * from medicine
+        where mno=#{mno}
+    </select>
+
+    <select id="selectAll" resultType="Medicine">
+        select * from medicine
+    </select>
+
+    <select id="selectByQuery" resultType="Medicine">
+        select * from medicine
+        where (#{mno} is null or mno=#{mno}) and
+              (#{mname} is null or mname like CONCAT('%',#{mname},'%')) and
+              (#{mmode} is null or mmode like CONCAT('%',#{mmode},'%')) and
+              (#{mefficacy} is null or mefficacy like CONCAT('%',#{mefficacy},'%'))
+    </select>
+
+    <insert id="insertMedicine" parameterType="Medicine">
+        insert into medicine(mname,mmode,mefficacy)
+        values(#{mname},#{mmode},#{mefficacy})
+    </insert>
+
+    <update id="updateMedicineByMno" parameterType="Medicine">
+        UPDATE medicine
+        SET mname=#{mname},
+            mmode=#{mmode},
+            mefficacy=#{mefficacy}
+        WHERE mno=#{mno}
+    </update>
+
+    <delete id="deleteMedicineByMno" parameterType="Integer">
+        delete FROM medicine
+        WHERE mno=#{mno}
+    </delete>
+</mapper>

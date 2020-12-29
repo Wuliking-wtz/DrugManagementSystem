@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tom.dao.AgencyDao">
+
+    <select id="selectByAno" resultType="Agency">
+        select * from agency
+        where ano=#{ano}
+    </select>
+
+    <select id="selectAll" resultType="Agency">
+        select * from agency
+    </select>
+
+    <select id="selectByQuery" resultType="Agency">
+        select * from agency
+        where (#{ano} is null or ano=#{ano}) and
+              (#{aname} is null or aname like CONCAT('%',#{aname},'%'))
+    </select>
+
+    <insert id="insertAgency" parameterType="Agency">
+        insert into agency(aname,asex,aphone,aremark)
+        values(#{aname},#{asex},#{aphone},#{aremark})
+    </insert>
+
+    <update id="updateAgencyByAno" parameterType="Agency">
+        UPDATE agency
+        SET aname=#{aname},
+            asex=#{asex},
+            aphone=#{aphone},
+            aremark=#{aremark}
+        WHERE ano=#{ano}
+    </update>
+
+    <delete id="deleteAgencyByAno" parameterType="Integer">
+        delete FROM agency
+        WHERE ano=#{ano}
+    </delete>
+</mapper>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tom.dao.UserLoginDao">
+
+    <select id="selectUserByAccount" resultType="User">
+        select * from user where account = #{account}
+    </select>
+
+    <select id="selectUserAll" resultType="User">
+        select * from user where type != '总管理员'
+    </select>
+
+    <update id="updateUser" parameterType="User">
+        UPDATE User
+        SET password=#{password},
+            type=#{type}
+        WHERE account=#{account}
+    </update>
+
+    <insert id="insertUser" parameterType="User">
+        insert into user(account,password)
+        values(#{account},#{password})
+    </insert>
+
+</mapper>

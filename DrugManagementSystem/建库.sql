@@ -1,0 +1,66 @@
+CREATE DATABASE `Drug_Management_System`
+USE `Drug_Management_System`;
+
+DROP TABLE IF EXISTS `user`;
+DROP TABLE IF EXISTS `client`;
+DROP TABLE IF EXISTS `sold`;
+DROP TABLE IF EXISTS `agency`;
+DROP TABLE IF EXISTS `medicine`;
+
+#用户信息表
+CREATE TABLE `user` (
+	`account` VARCHAR(10) PRIMARY KEY,
+	`password` VARCHAR(10),
+	`type` VARCHAR(10) DEFAULT '普通用户',
+	`client` BOOL DEFAULT 0,
+	`sold` BOOL DEFAULT 0,
+	`agency` BOOL DEFAULT 0,
+	`medicine` BOOL DEFAULT 0
+) ENGINE=INNODB DEFAULT CHARSET=utf8;
+#顾客信息表
+CREATE TABLE `client` (
+	cno INT AUTO_INCREMENT PRIMARY KEY,
+	cname VARCHAR(8),
+	csex VARCHAR(1),
+	cage INT(4),
+	caddress VARCHAR(50),
+	cphone VARCHAR(12),
+	cremark VARCHAR(50)
+) ENGINE=INNODB DEFAULT CHARSET=utf8;
+
+
+#经办人信息表
+CREATE TABLE `agency` (
+	ano INT AUTO_INCREMENT PRIMARY KEY,
+	aname VARCHAR(8),
+	asex VARCHAR(1),
+	aphone VARCHAR(12),
+	aremark VARCHAR(50)
+) ENGINE=INNODB DEFAULT CHARSET=utf8;
+
+#药品信息表
+CREATE TABLE `medicine` (
+	mno INT AUTO_INCREMENT PRIMARY KEY,
+	mname VARCHAR(50),
+	mmode VARCHAR(2),
+	mefficacy VARCHAR(50)
+) ENGINE=INNODB DEFAULT CHARSET=utf8;
+
+#订单表
+CREATE TABLE `sold` (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	csymptom VARCHAR(50) COMMENT '症状',
+	cno INT,
+	mno INT,
+	ano INT,
+	cdate DATETIME
+) ENGINE=INNODB DEFAULT CHARSET=utf8;
+
+ALTER TABLE sold ADD CONSTRAINT FK_ID1 FOREIGN KEY(cno) REFERENCES `client`(cno);
+ALTER TABLE sold ADD CONSTRAINT FK_ID3 FOREIGN KEY(ano) REFERENCES `agency`(ano);
+ALTER TABLE sold ADD CONSTRAINT FK_ID2 FOREIGN KEY(mno) REFERENCES `medicine`(mno);
+
+INSERT INTO `user`
+VALUES('root','123456','总管理员',TRUE,TRUE,TRUE,TRUE)
+
+SELECT * FROM USER

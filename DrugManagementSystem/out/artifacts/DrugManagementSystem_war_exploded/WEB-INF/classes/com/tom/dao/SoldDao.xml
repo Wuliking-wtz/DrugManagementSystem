@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tom.dao.SoldDao">
+
+    <select id="selectById" resultType="Sold">
+        select * from sold
+        where id=#{id}
+    </select>
+
+    <select id="selectAll" resultType="Sold">
+        select * from sold
+    </select>
+
+    <select id="selectByQuery" resultType="Sold">
+        select * from sold
+        where (#{id} is null or id=#{id}) and
+              (#{cno} is null or cno=#{cno}) and
+              (#{ano} is null or ano=#{ano})
+    </select>
+
+    <select id="selectByAno" resultType="Integer">
+        select count(*) from sold
+        where ano=#{ano}
+    </select>
+
+    <select id="selectByMno" resultType="Integer">
+        select count(*) from sold
+        where mno=#{mno}
+    </select>
+
+    <select id="selectByCno" resultType="Integer">
+        select count(*) from sold
+        where cno=#{cno}
+    </select>
+
+    <insert id="insertSold" parameterType="Sold">
+        insert into sold(csymptom,cno,mno,ano,cdate)
+        values(#{csymptom},#{cno},#{mno},#{ano},#{cdate})
+    </insert>
+
+    <update id="updateSoldById" parameterType="Sold">
+        UPDATE sold
+        SET csymptom=#{csymptom},
+            cno=#{cno},
+            mno=#{mno},
+            ano=#{ano},
+            cdate=#{cdate}
+        WHERE id=#{id}
+    </update>
+
+    <delete id="deleteSoldById" parameterType="Integer">
+        delete FROM sold
+        WHERE id=#{id}
+    </delete>
+</mapper>

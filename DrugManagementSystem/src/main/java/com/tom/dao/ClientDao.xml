@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tom.dao.ClientDao">
+
+    <select id="selectByCno" resultType="Client">
+        select * from client
+        where cno=#{cno}
+    </select>
+
+    <select id="selectAll" resultType="Client">
+        select * from client
+    </select>
+
+    <select id="selectByQuery" resultType="Client">
+        select * from client
+        where (#{cno} is null or cno=#{cno}) and
+              (#{cname} is null or cname like CONCAT('%',#{cname},'%')) and
+              (#{caddress} is null or caddress like CONCAT('%',#{caddress},'%'))
+    </select>
+
+    <insert id="insertClient" parameterType="Client">
+        insert into client(cname,csex,cage,caddress,cphone,cremark)
+        values(#{cname},#{csex},#{cage},#{caddress},#{cphone},#{cremark})
+    </insert>
+
+    <update id="updateClientByCno" parameterType="Client">
+        UPDATE `client`
+        SET cname=#{cname},
+            csex=#{csex},
+            cage=#{cage},
+            caddress=#{caddress},
+            cphone=#{cphone},
+            cremark=#{cremark}
+        WHERE cno=#{cno}
+    </update>
+
+    <delete id="deleteClientByCno" parameterType="Integer">
+        delete FROM client
+        WHERE cno=#{cno}
+    </delete>
+</mapper>
